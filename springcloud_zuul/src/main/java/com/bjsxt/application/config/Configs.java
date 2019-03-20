@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Configs {
 
+	//sys................
 	@Bean
 	public PatternServiceRouteMapper patternServiceRouteMapper() {
 		return new PatternServiceRouteMapper("(?<name>^.+)", //serviceId
