@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: zuul-server
+
+server:
+  port: 7777
+  
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+      
+#配置静态路由
+#zuul:
+  #routes:
+    #ticket: #是票务服务的路由
+      #path: /ticket/**
+      #serviceId: ticket-provider
+    #orders: #是订单服务的路由
+      #path: /orders/**
+      #serviceId: order-provider
+    
+    
+  
+      
